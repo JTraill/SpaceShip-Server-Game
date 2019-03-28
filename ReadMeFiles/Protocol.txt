@@ -1,0 +1,8 @@
+				SPACE SHIP PROJECT PROTOCOL
+Client Request:		Server Request:		Server Response:	Client Response:	Description:
+------------------------------------------------------------------------------------------------------------
+START			-			Game start/Waiting for opponent	-		Will start the game if there are more than 1 clients connected so that the players will have opponents
+STOP			-			Game Stop					If the client finds the comet colides with the player, it will tell the server and the server will stop the clients game
+GETHIGHSCORE		-			High Scores		-			Top 3 high scores that have been played on this server will be showsn to the client
+-			GETSCORE					Last score		Server will examine the last score of the client to see if it is good enough to be places in the hiogh scores.
+-			POST			-			Post score		Post scores to the clients to see who won the round

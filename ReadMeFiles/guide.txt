@@ -1,0 +1,27 @@
+How to properly run:
+javac *.java && java GameServer
+javac *.java && java FrameViewer
+javac *.java && java FrameViewer
+
+This will start the server and two opponents to face eachother. You can run FrameViewer more times
+if you would like to test more than two clients
+
+Command line arguments:
+First one is for the IP address, second is for the port
+If left blank they will automatically go to 'localhost' and '2018' respectively
+
+Starting:
+The game will give you the option of selecting 3 difficulties, easy, medium and hard.
+The difficulties affect the amount of points, speed, comet probability and pellet probabilities of
+the game.
+There is also a Get high scores button which will list the top 3 high scores on that server.
+
+Controls:
+left and right arrow keys control your ship. try to avoid the comets! the multi color tiny orbs
+are called pellets and will make your ship invincible from comets for a short amount of time
+(they also give you a points boost)
+Once the player hits a comet, the client stops and waits for the other client to finish.
+This is when the server tells the clients who scored the most points and who the victor is!
+Space key will shoot a bullet which if connects with a comet, will destroy and remove it.
+The player is only allowed one bullet on screen at a time to deter the player from spam clicking
+space bar, and puts an emphasis on dodging the comets instead
